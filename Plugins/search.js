@@ -47,7 +47,7 @@ module.exports = {
 
         for (let num = 0; num < 10; num++) {
           resText += `_📍 Result:_ *${num + 1}*\n\n_🎀 Title:_ *${
-            googleSearch[num].title
+            googleSearch[num].title || 1
           }*\n\n_🔶 Description:_ *${
             googleSearch[num].snippet
           }*\n\n_🔷 Link:_ *${googleSearch[num].link}*\n\n\n`;
